@@ -1,6 +1,6 @@
 {
   "name": "paper-snake",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "dist/paper-snake.js",
   "scripts": {
