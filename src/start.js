@@ -1,3 +1,4 @@
+import 'regenerator-runtime/runtime'
 import { last } from 'lodash-es'
 import createLayer from './createLayer.js'
 import createBaseLayer from './createBaseLayer.js'
