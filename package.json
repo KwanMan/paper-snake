@@ -1,0 +1,21 @@
+{
+  "name": "paper-snake",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/start.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf dist && buble src/ -o dist/ --objectAssign --no modules"
+  },
+  "author": "Tommy Kwan",
+  "license": "ISC",
+  "dependencies": {
+    "lodash-es": "^4.17.10",
+    "roughjs": "^2.2.3"
+  },
+  "devDependencies": {
+    "buble": "^0.19.3",
+    "prettier-standard": "^8.0.1",
+    "standard": "^11.0.1"
+  }
+}
