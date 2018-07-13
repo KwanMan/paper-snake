@@ -10,7 +10,6 @@
   "author": "Tommy Kwan",
   "license": "ISC",
   "dependencies": {
-    "lodash-es": "^4.17.10",
     "regenerator-runtime": "^0.12.0",
     "roughjs": "^2.2.3"
   },

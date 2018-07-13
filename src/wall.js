@@ -1,4 +1,4 @@
-import { last } from 'lodash'
+import { last } from './utils.js'
 import * as directions from './directions.js'
 import { translate } from './coordinates.js'
 export default function createWall (startCoordinates, startDirection) {

@@ -1,4 +1,4 @@
-import { last } from 'lodash-es'
+import { last } from './utils'
 import { opposite, clockwise } from './directions.js'
 import co, { translate, areEqual } from './coordinates.js'
 import createCoordinateMap from './coordinateMap.js'
