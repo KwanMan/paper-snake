@@ -1,4 +1,4 @@
-import rough from 'roughjs'
+import rough from 'roughjs/bin/rough'
 import { BLOCK, WIDTH, HEIGHT } from './constants.js'
 
 export default function createLayer (mount, style) {

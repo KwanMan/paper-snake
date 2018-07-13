@@ -11,10 +11,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: modulePath => {
-          return (
-            /node_modules/.test(modulePath) &&
-            !/node_modules\/roughjs/.test(modulePath)
-          )
+          return false
         },
         use: {
           loader: 'babel-loader',
