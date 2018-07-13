@@ -10,7 +10,16 @@ export default {
     babel({
       babelrc: false,
       presets: [
-        ['babel-preset-env', { modules: false, targets: { uglify: true } }]
+        [
+          'babel-preset-env',
+          {
+            modules: false,
+            targets: {
+              uglify: true,
+              browsers: ['last 2 versions', 'safari >= 7']
+            }
+          }
+        ]
       ],
       plugins: ['babel-plugin-transform-object-rest-spread']
     })
