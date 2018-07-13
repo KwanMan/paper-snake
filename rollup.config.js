@@ -9,7 +9,9 @@ export default {
   plugins: [
     babel({
       babelrc: false,
-      presets: [['babel-preset-env', { modules: false, uglify: true }]],
+      presets: [
+        ['babel-preset-env', { modules: false, targets: { uglify: true } }]
+      ],
       plugins: ['babel-plugin-transform-object-rest-spread']
     })
   ]
