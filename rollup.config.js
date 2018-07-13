@@ -1,4 +1,5 @@
 import babel from 'rollup-plugin-babel'
+import resolve from 'rollup-plugin-node-resolve'
 
 export default {
   input: 'src/start.js',
@@ -9,19 +10,12 @@ export default {
   plugins: [
     babel({
       babelrc: false,
-      presets: [
-        [
-          'babel-preset-env',
-          {
-            modules: false,
-            targets: {
-              uglify: true,
-              browsers: ['last 2 versions', 'safari >= 7']
-            }
-          }
-        ]
-      ],
-      plugins: ['babel-plugin-transform-object-rest-spread']
-    })
+      presets: [['babel-preset-env', { modules: false }]],
+      plugins: [
+        'babel-plugin-external-helpers',
+        'babel-plugin-transform-object-rest-spread'
+      ]
+    }),
+    resolve()
   ]
 }
