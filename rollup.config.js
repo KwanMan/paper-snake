@@ -4,7 +4,7 @@ export default {
   input: 'src/start.js',
   output: {
     file: 'dist/paper-snake.js',
-    format: 'cjs'
+    format: 'es'
   },
   plugins: [
     babel({
