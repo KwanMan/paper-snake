@@ -2,7 +2,7 @@
   "name": "paper-snake",
   "version": "1.0.4",
   "description": "",
-  "main": "dist/start.js",
+  "main": "dist/paper-snake.js",
   "scripts": {
     "prepublish": "npm run build",
     "build": "rm -rf dist && webpack"
