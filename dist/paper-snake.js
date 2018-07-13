@@ -1,8 +1,4 @@
-'use strict';
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var rough = _interopDefault(require('roughjs/bin/rough'));
+import rough from 'roughjs/bin/rough';
 
 function last(arr) {
   return arr[arr.length - 1];
@@ -487,4 +483,4 @@ function start(mountNode) {
   }
 }
 
-module.exports = start;
+export default start;
